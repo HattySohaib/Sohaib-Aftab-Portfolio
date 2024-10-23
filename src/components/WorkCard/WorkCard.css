@@ -71,9 +71,6 @@
 
 .card-arrow {
     color: var(--arr);
-    transform: rotateZ(90deg);
-    font-size: 3rem;
-    font-weight: 700;
     position: absolute;
     right: 0;
     bottom: 0;

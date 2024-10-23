@@ -7,6 +7,7 @@ import useTheme from "../../contexts/theme";
 
 import { NavLink } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
+import { RiMoonFill, RiSunFill } from "@remixicon/react";
 
 function Navbar() {
   const { themeMode, lightTheme, darkTheme } = useTheme();
@@ -107,7 +108,7 @@ function Navbar() {
           ))}
         </motion.ul>
         <button onClick={handleTheme} className="theme-btn">
-          <span className="material-symbols-rounded">contrast</span>
+          {themeMode === "dark" ? <RiMoonFill /> : <RiSunFill />}
         </button>
         <ColoredBtn href={"blogs"} text={"Blogs"} icon={"arrow_outward"} />
       </div>

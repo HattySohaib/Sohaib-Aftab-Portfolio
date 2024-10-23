@@ -2,6 +2,7 @@ import React from "react";
 import "./Buttons.css";
 import useTheme from "../../contexts/theme";
 import { NavLink } from "react-router-dom";
+import { RiArrowRightUpLine, RiDownloadLine } from "@remixicon/react";
 
 function ColoredBtn({ href, text, icon }) {
   const { themeMode } = useTheme();
@@ -10,7 +11,11 @@ function ColoredBtn({ href, text, icon }) {
       <div className={`colored-btn btn-${themeMode}`}>
         <p className="btn-text">{text}</p>
         <div className="btn-circle">
-          <span className="material-symbols-rounded icon">{icon}</span>
+          {text === "Blogs" ? (
+            <RiArrowRightUpLine className="icon" />
+          ) : (
+            <RiDownloadLine size={18} />
+          )}
         </div>
       </div>
     </NavLink>

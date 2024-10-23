@@ -57,7 +57,6 @@ function Skills() {
             setSelectedTag("Tool");
           }}
         />
-        <span class="material-symbols-rounded">filter_list</span>
       </div>
       <div className="skills-icons">
         {techStack.map((e, ind) => (

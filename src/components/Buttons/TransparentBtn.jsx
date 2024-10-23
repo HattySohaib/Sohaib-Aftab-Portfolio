@@ -1,13 +1,14 @@
 import React from "react";
 import useTheme from "../../contexts/theme";
+import { RiArrowRightUpLine } from "@remixicon/react";
 
-function TransparentBtn({ text, icon }) {
+function TransparentBtn({ text }) {
   const { themeMode } = useTheme();
   return (
     <div className={`transparent-btn btn-${themeMode}`}>
       <p className="btn-text">{text}</p>
       <div className="btn-circle">
-        <span className="material-symbols-rounded icon">{icon}</span>
+        <RiArrowRightUpLine className="icon" />
       </div>
     </div>
   );

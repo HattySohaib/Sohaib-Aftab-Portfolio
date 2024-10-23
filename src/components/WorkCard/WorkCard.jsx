@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./WorkCard.css";
 import useTheme from "../../contexts/theme";
+import { RiArrowRightDownLine } from "@remixicon/react";
 
 function WorkCard({ name, image, brief, source, link, hashtags, tag, tab }) {
   const { themeMode } = useTheme();
@@ -50,9 +51,7 @@ function WorkCard({ name, image, brief, source, link, hashtags, tag, tab }) {
             </a>
           )}
         </div>
-        <span className="material-symbols-rounded card-arrow">
-          arrow_outward
-        </span>
+        <RiArrowRightDownLine size={50} className="card-arrow" />
       </div>
     </div>
   );

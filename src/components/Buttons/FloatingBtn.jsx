@@ -2,6 +2,7 @@ import React from "react";
 import "./Buttons.css";
 import { motion } from "framer-motion";
 import useTheme from "../../contexts/theme";
+import { RiArrowUpLine } from "@remixicon/react";
 
 function FloatingBtn({ onClick }) {
   const { themeMode } = useTheme();
@@ -12,7 +13,7 @@ function FloatingBtn({ onClick }) {
       id="floating-btn"
       className={`btn-${themeMode}`}
     >
-      <span class="material-symbols-rounded">north</span>
+      <RiArrowUpLine className="icon" />
     </motion.button>
   );
 }

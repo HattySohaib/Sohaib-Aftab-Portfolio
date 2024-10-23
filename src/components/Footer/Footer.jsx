@@ -2,6 +2,7 @@ import React from "react";
 import "./Footer.css";
 
 import useTheme from "../../contexts/theme.js";
+import { RiArrowRightUpLine } from "@remixicon/react";
 
 function Footer() {
   const { themeMode } = useTheme();
@@ -30,29 +31,29 @@ function Footer() {
               href="https://www.linkedin.com/in/sohaibaftab/"
             >
               LinkedIn
-              <span className="material-symbols-rounded">arrow_outward</span>
+              <RiArrowRightUpLine size={14} />
             </a>
             <a
               className="social-link"
               href="https://www.instagram.com/sohaibaftab.29/"
             >
               Instagram
-              <span className="material-symbols-rounded">arrow_outward</span>
+              <RiArrowRightUpLine size={14} />
             </a>
             <a className="social-link" href="https://twitter.com/HattySohaib">
               Twitter X
-              <span className="material-symbols-rounded">arrow_outward</span>
+              <RiArrowRightUpLine size={14} />
             </a>
             <a
               className="social-link"
               href="https://www.facebook.com/sohaib.5prime"
             >
               Facebook
-              <span className="material-symbols-rounded">arrow_outward</span>
+              <RiArrowRightUpLine size={14} />
             </a>
             <a className="social-link" href="mailto:sohaibaftab29@gmail.com">
               Email
-              <span className="material-symbols-rounded">arrow_outward</span>
+              <RiArrowRightUpLine size={14} />
             </a>
           </div>
         </div>
@@ -62,21 +63,21 @@ function Footer() {
             <div className="profile-links">
               <a href="https://github.com/hattySohaib" className="profile-link">
                 Github
-                <span className="material-symbols-rounded">arrow_outward</span>
+                <RiArrowRightUpLine size={14} />
               </a>
               <a
                 href="https://leetcode.com/HattySohaib/"
                 className="profile-link"
               >
                 LeetCode
-                <span className="material-symbols-rounded">arrow_outward</span>
+                <RiArrowRightUpLine size={14} />
               </a>
               <a
                 href="https://auth.geeksforgeeks.org/user/sohaib5prime/"
                 className="profile-link"
               >
                 Geeks for Geeks
-                <span className="material-symbols-rounded">arrow_outward</span>
+                <RiArrowRightUpLine size={14} />
               </a>
             </div>
           </div>
