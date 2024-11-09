@@ -13,6 +13,7 @@ import Preloader from "./components/Preloader/Preloader";
 import FloatingBtn from "./components/Buttons/FloatingBtn";
 import AboutPage from "./pages/AboutPage";
 import Blogs from "./pages/Blogs";
+import { Bloggest } from "bloggest";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -53,7 +54,7 @@ function App() {
       <Routes>
         <Route index path="" element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />
-        <Route path="blogs" element={<Blogs />} />
+        <Route path="blogs/*" element={<Blogs />} />
       </Routes>
       <Footer />
     </ThemeProvider>
