@@ -21,7 +21,7 @@ function Hero() {
             Developer
             <br />& Programmer.
           </h1>
-          <h2 className="sub-header">Aspiring Engineer. Ambitious Coder.</h2>
+          <h2 className="sub-header">Aspiring Engineer. MERN Developer.</h2>
           <div className="hero-buttons">
             <Link
               className="link"

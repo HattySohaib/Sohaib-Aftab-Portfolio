@@ -16,16 +16,14 @@ function About() {
         className="about-left"
       >
         <p className="about-text">
+          Hi! I'm Sohaib Aftab, currently pursuing B.Tech. in Computer Science and Engineering at IIITDM Kurnool, Andhra Pradesh. My passion for technology started early, teaching myself Java in 8th grade and Python during my +2 in CBSE.
+        </p>
+        <p className="about-text">
           I develop responsive, static or dynamic websites with the powerful
-          MERN stack, and cross-platform mobile apps with React Native.
+          MERN stack, and cross-platform mobile apps with React Native. I have worked on Backend-heavy websites with authentication, RESTful APIs and Database management, as well as on Frontend-heavy websites like portfolios and business websites.
         </p>
         <p className="about-text">
-          I have worked on Backend-heavy websites with authentication, RESTful
-          APIs and Database management, as well as on Frontend-heavy websites
-          like portfolios and business websites.
-        </p>
-        <p className="about-text">
-          l am also open to internship opportunities in SDE roles.
+          Since joining IIITDM, I've become a MERN developer and have worked on both frontend-heavy and backend-heavy projects, including freelance and personal work. I'm also open to internship opportunities in SDE roles.
         </p>
         <ColoredBtn href={"#"} text={"Resume"} icon={"download"} />
       </motion.div>
