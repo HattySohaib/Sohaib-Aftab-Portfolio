@@ -7,16 +7,16 @@ function EventCard({ year, achievement, brief }) {
   const { themeMode } = useTheme();
   const [dotColor, setDotColor] = useState("");
 
-  // Array of pale dot colors (reduced to 5)
-  const colors = [
-    "#a086c4", // pale pink
-    "#78aec0", // light blue
-    "#77b977", // pale green
-    "#ac69ac", // thistle (pale purple)
-    "#ff6363", // light yellow
-  ];
-
   useEffect(() => {
+    // Array of pale dot colors (reduced to 5)
+    const colors = [
+      "#a086c4", // pale pink
+      "#78aec0", // light blue
+      "#77b977", // pale green
+      "#ac69ac", // thistle (pale purple)
+      "#ff6363", // light yellow
+    ];
+    
     // Select a random color from the colors array
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     setDotColor(randomColor);
@@ -28,7 +28,7 @@ function EventCard({ year, achievement, brief }) {
       whileInView={{ y: 0 }}
       transition={{ duration: 0.4 }}
       className={`event-card event-card-${themeMode}`}
-      style={themeMode == "light" ? { borderColor: dotColor } : {}}
+      style={themeMode === "light" ? { borderColor: dotColor } : {}}
     >
       <div className="dot" style={{ backgroundColor: dotColor }}></div>
       <p className="year">{year}</p>

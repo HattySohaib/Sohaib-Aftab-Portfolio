@@ -98,15 +98,15 @@ function Footer() {
           <div className="quicks blogs">
             <p className="profiles-header">Blogs</p>
             <div className="quick-links">
-              <a href="#" className="quick-link">
+              <button type="button" href="/blogs/poetry" className="quick-link">
                 Poetry
-              </a>
-              <a href="#" className="quick-link">
+              </button>
+              <button type="button" href="/blogs/technical" className="quick-link">
                 Technical
-              </a>
-              <a href="#" className="quick-link">
+              </button>
+              <button type="button" href="/blogs/others" className="quick-link">
                 Others
-              </a>
+              </button>
             </div>
           </div>
         </div>
