@@ -1,0 +1,49 @@
+.card-light {
+    --bg: white;
+    --sk-brd: none;
+}
+
+.card-dark {
+    --bg: rgba(24, 24, 24, 0.356);
+    --sk-brd: 1px solid #88FCAF;
+}
+
+.skill-card {
+    width: 5rem;
+    height: 5rem;
+    background: var(--bg);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.4s;
+    border: 1px solid var(--sk-brd);
+}
+
+.skill-card img {
+    height: 100%;
+    transition: all 0.4s;
+
+}
+
+.skill-card:hover {
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.116);
+    outline: var(--sk-brd);
+}
+
+.not-selected-skill {
+    scale: 0;
+    transition: all 0.4s;
+}
+
+@media screen and (max-width: 920px) {
+
+    .skill-card {
+        width: 4rem;
+    }
+
+}

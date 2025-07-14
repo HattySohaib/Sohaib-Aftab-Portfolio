@@ -1,0 +1,40 @@
+.tag-light {
+    --clr: black;
+    --ot: none;
+}
+
+.tag-dark {
+    --clr: white;
+    --ot: 1px solid var(--pri);
+}
+
+.tag-btn {
+    padding: 0.25rem 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    background: none;
+    z-index: 2;
+
+}
+
+.tag-btn p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--clr);
+}
+
+.tag-btn:hover {
+    outline: 1px solid var(--clr);
+}
+
+.selected {
+    background-color: black;
+    color: white;
+    outline: var(--ot);
+}
+
+.selected p {
+    color: white;
+}

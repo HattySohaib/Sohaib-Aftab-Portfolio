@@ -1,0 +1,28 @@
+/* .horizontal-line {
+    height: 7px;
+    width: 90vw;
+    background-color: #c5c5c593;
+    border-radius: 1rem;
+}
+
+.work-timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.timeline-bottom {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    gap: 2rem;
+}
+
+.timeline-bottom .dot {
+    left: -1rem;
+    top: -3.8rem;
+} */

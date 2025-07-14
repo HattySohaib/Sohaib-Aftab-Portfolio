@@ -1,0 +1,30 @@
+.cursor-light {
+    --brd: 1px solid black;
+}
+
+.cursor-dark {
+    --brd: 1px solid white;
+}
+
+.cursor {
+    background: none;
+    border: var(--brd);
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+
+@media screen and (max-width: 920px) {
+    .cursor {
+        display: none;
+    }
+}

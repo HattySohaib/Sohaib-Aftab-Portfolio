@@ -1,0 +1,53 @@
+.preloader-light {
+    --bg: white;
+    --clr: black;
+}
+
+.preloader-dark {
+    --bg: black;
+    --clr: white;
+}
+
+#preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.preloader svg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% + 300px);
+
+}
+
+.preloader path {
+    fill: var(--bg);
+}
+
+.preloader span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--clr);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.hello {
+    display: flex;
+    align-items: center;
+    color: var(--clr);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    z-index: 2;
+}

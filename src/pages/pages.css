@@ -1,0 +1,138 @@
+.home-light,
+.about-light {
+    --bg: white;
+    --txt: black;
+    --theme: none;
+    --bdy: #353535;
+    --span: #353535;
+}
+
+.home-dark,
+.about-dark {
+    --bg: black;
+    --theme: block;
+    --txt: white;
+    --bdy: rgb(180, 180, 180);
+    --span: black;
+}
+
+#home {
+    background-color: var(--bg);
+}
+
+.backdrop {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    width: 100%;
+}
+
+.pc {
+    display: var(--theme);
+}
+
+
+#about-page {
+    background-color: var(--bg);
+    padding: 4rem;
+}
+
+.about-header {
+    color: var(--txt);
+    font-size: 3rem;
+    margin-top: 0;
+    font-weight: 300;
+    text-align: center;
+}
+
+.intro {
+    background-color: var(--bg);
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.title {
+    color: var(--txt);
+    font-family: "Pecita";
+    font-size: 4rem;
+    margin: 0;
+}
+
+.body {
+    width: 90%;
+    text-align: justify;
+    font-size: 1.4rem;
+    color: var(--bdy);
+    margin: 0;
+}
+
+.story {
+    padding: 3rem;
+}
+
+.story-title {
+    color: var(--txt);
+    font-family: "Pecita";
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}
+
+.story-body {
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--bdy);
+}
+
+.story-body span {
+    background-color: var(--pri);
+    color: var(--span);
+}
+
+@media screen and (max-width: 920px) {
+
+    .mob {
+        display: var(--theme);
+    }
+
+    .pc {
+        display: none;
+    }
+
+    #about-page {
+        padding: 2rem;
+    }
+
+    .about-header {
+        font-size: 2rem;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 2.35rem;
+    }
+
+    .body {
+        width: 100%;
+    }
+
+    .story {
+        padding: 0;
+        margin: 2rem 0;
+    }
+
+    .story-title {
+        font-size: 2rem;
+    }
+
+    .story-body {
+        text-align: justify;
+        font-size: 1.1rem;
+    }
+}

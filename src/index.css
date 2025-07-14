@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: Poppins;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(0, 0, 0);
+}
+
+/* * {
+  outline: 1px solid red;
+} */
+
+@font-face {
+  font-family: 'Pecita';
+  src: url('assets/fonts/Pecita.otf');
+  font-weight: normal;
+  font-style: normal;
+}

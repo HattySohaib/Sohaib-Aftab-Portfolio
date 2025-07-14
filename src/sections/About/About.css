@@ -1,0 +1,58 @@
+.about-light {
+    --abt-bg: #F3F3F3;
+    --abt-text: #545454;
+}
+
+.about-dark {
+    --abt-bg: rgba(24, 24, 24, 0.5);
+    --abt-text: #EAEAEA;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--abt-bg);
+    padding: 4rem;
+    margin: 4rem 0;
+    backdrop-filter: blur(10px);
+}
+
+.about-text {
+    font-size: 1.35rem;
+    color: var(--abt-text);
+}
+
+.about-img {
+    width: 80%;
+}
+
+.about-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-left .btn-circle {
+    background-color: black;
+    color: white;
+}
+
+
+.about-left .colored-btn {
+    background-color: var(--pri);
+    color: black;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 920px) {
+    #about {
+        padding: 2rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about-text {
+        font-size: 1.1rem;
+    }
+}

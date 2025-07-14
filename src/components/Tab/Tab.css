@@ -1,0 +1,44 @@
+.tab-light {
+    --txt: #363636;
+    --tab-bg: #ffffff;
+}
+
+.tab-dark {
+    --txt: white;
+    --tab-bg: rgba(24, 24, 24, 0.5);
+}
+
+
+.tab-btn {
+    background: none;
+    padding: 0.5rem 4rem;
+    cursor: pointer;
+    z-index: 2;
+    background-color: var(--tab-bg);
+    backdrop-filter: blur(10px);
+}
+
+.tab-btn p {
+    font-size: 1.3rem;
+    color: var(--txt);
+    letter-spacing: 12%;
+    margin: 0;
+}
+
+.active-tab {
+    background: linear-gradient(90deg, #a9fb52a7, #8afba8b5);
+}
+
+@media screen and (max-width: 920px) {
+
+    .tab-btn {
+        width: 80%;
+        padding: 0.25rem;
+
+    }
+
+    .tab-btn p {
+        font-size: 1.2rem;
+        text-wrap: nowrap;
+    }
+}

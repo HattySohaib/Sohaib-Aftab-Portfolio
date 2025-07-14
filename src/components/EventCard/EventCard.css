@@ -1,0 +1,57 @@
+.event-card-light {
+    --brd: gray;
+    --year: #b4b4b4;
+    --achv: #252525;
+    --brf: #545454;
+
+}
+
+.event-card-dark {
+    --brd: #b1b1b1;
+    --year: #85be98;
+    --achv: white;
+    --brf: rgb(190, 209, 180);
+}
+
+.event-card {
+    width: auto;
+    border: 1px solid var(--brd);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.dot {
+    height: 1rem;
+    width: 1rem;
+    /* background-color property is removed as we're setting it inline */
+    border-radius: 50%;
+    position: relative;
+    right: 3.76rem;
+    bottom: 1.1rem;
+}
+
+.year {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--year);
+    margin: 0;
+}
+
+.achievement {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: var(--achv);
+}
+
+.brief {
+    font-size: 1rem;
+    color: var(--brf);
+}
+
+@media screen and (max-width: 920px) {
+    .event-card {
+        width: fit-content;
+    }
+
+}

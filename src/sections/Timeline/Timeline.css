@@ -1,0 +1,48 @@
+.timeline-light {
+    --hdr-clr: #262626
+}
+
+.timeline-dark {
+    --hdr-clr: white;
+}
+
+.timeline-header {
+    color: var(--hdr-clr);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.timeline-header span {
+    color: var(--sec);
+}
+
+.events {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.timeline-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1.75rem;
+}
+
+.line {
+    border-radius: 0.5rem;
+    width: 0.5rem;
+    height: 100%;
+    background-color: #E5E5E5;
+}
+
+@media screen and (max-width: 920px) {
+    .events {
+        padding: 2rem;
+    }
+
+    .timeline-right {
+        width: 100%;
+    }
+
+}

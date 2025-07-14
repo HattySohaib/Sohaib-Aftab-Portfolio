@@ -1,0 +1,164 @@
+.card-light {
+    --bg: white;
+    --txt: black;
+    --arr: #E2E2E2;
+    --wrk: #363636;
+    --brd: 1px solid black;
+    --hvr: white;
+    --out: none
+}
+
+.card-dark {
+    --bg: rgba(49, 49, 49, 0.459);
+    --txt: white;
+    --arr: #E2E2E2;
+    --wrk: white;
+    --brd: 1px solid white;
+    --hvr: black;
+    --out: 1px solid #88FCAF;
+}
+
+.work-card {
+    box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.075);
+    width: 80%;
+    border-radius: 1rem;
+    background: var(--bg);
+    backdrop-filter: blur(10px);
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--txt);
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.show {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.hide {
+    display: none;
+}
+
+.work-card:hover {
+    box-shadow: 0 0 40px 20px rgba(0, 0, 0, 0.187);
+    outline: var(--out);
+    transition: all 0.3s;
+}
+
+
+.card-img {
+    overflow: hidden;
+    padding: 0;
+    width: 20rem;
+    height: 20rem;
+}
+
+.card-img img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.card-arrow {
+    color: var(--arr);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.hashtags span {
+    font-size: 0.9rem;
+}
+
+.hashtags :nth-child(1) {
+    color: #b700ff;
+}
+
+.hashtags :nth-child(2) {
+    color: #ff0040;
+}
+
+.hashtags :nth-child(3) {
+    color: #0084ff;
+}
+
+.hashtags :nth-child(4) {
+    color: #1c8b00;
+}
+
+
+.work-name {
+    font-size: 1.75rem;
+    color: var(--wrk);
+    margin: 0;
+}
+
+.work-brief {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.work-card-btns {
+    display: flex;
+    gap: 2rem;
+}
+
+.source-btn {
+    border-radius: 1.25rem;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.35rem 1rem;
+    border: var(--brd);
+    color: var(--txt);
+}
+
+.source-btn:hover {
+    background-color: var(--txt);
+    color: var(--hvr);
+}
+
+@media screen and (max-width: 920px) {
+    .work-card {
+        width: 100%;
+    }
+
+    .show {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-img img {
+        height: 16rem;
+    }
+
+    .card-img {
+        height: 16rem;
+    }
+
+    .details {
+        padding: 0.5rem 1rem;
+    }
+
+    .work-name {
+        font-size: 1.5rem;
+    }
+
+    .work-brief {
+        font-size: 0.8rem;
+    }
+
+    .source-btn {
+        font-size: 0.8rem;
+    }
+}

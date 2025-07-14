@@ -1,0 +1,101 @@
+.btn-light {
+    --clr-btn-bg: black;
+    --trn-btn-bg: white;
+    --btn-stroke: black;
+    --clr-btn-text: white;
+    --trn-btn-text: black;
+
+}
+
+.btn-dark {
+    --clr-btn-bg: white;
+    --trn-btn-bg: black;
+    --btn-stroke: white;
+    --clr-btn-text: black;
+    --trn-btn-text: white;
+}
+
+.btn-text {
+    width: 90%;
+    text-align: center;
+}
+
+
+.btn-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--pri);
+    color: black;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+.colored-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-btn-bg);
+    color: var(--clr-btn-text);
+    height: 2rem;
+    width: 9rem;
+    border-radius: 2rem;
+    padding: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.transparent-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--trn-btn-bg);
+    outline: 2px solid var(--btn-stroke);
+    color: var(--trn-btn-text);
+    height: 2.5rem;
+    width: 12rem;
+    border-radius: 2rem;
+    padding: 4px;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+#floating-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid var(--btn-stroke);
+    background-color: var(--trn-btn-bg);
+    color: var(--btn-stroke);
+    z-index: 99;
+}
+
+#floating-btn span {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.transparent-btn .btn-circle {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.colored-btn:hover .icon,
+.transparent-btn:hover .icon {
+    transform: translate3D(4px, -4px, 0);
+    transition: all ease-out 0.2s;
+}
+
+.colored-btn:hover .dwnld-icon {
+    transform: translate3D(0, 4px, 0);
+    scale: 1.09;
+    transition: all ease-out 0.2s;
+}

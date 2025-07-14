@@ -1,0 +1,143 @@
+.side-nav-light {
+    --nav-bg: white;
+    --icon-color: #363636;
+    --hover-color: var(--sec);
+    --nav-border: 1px solid #b6b6b6;
+}
+
+.side-nav-dark {
+    --nav-bg: #00000023;
+    --icon-color: #d7d7d7;
+    --hover-color: var(--sec);
+    --nav-border: 1px solid #333333;
+}
+
+.side-nav {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    width: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* To push toggle button to the bottom */
+    background-color: var(--nav-bg);
+    border-radius: 2rem;
+    z-index: 98;
+    backdrop-filter: blur(10px);
+    border: var(--nav-border);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.section-nav,
+.social-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.section-nav {
+    border-bottom: 1px solid var(--icon-color);
+    padding-bottom: 1.5rem;
+
+}
+
+.social-nav {
+    padding-top: 1.5rem;
+}
+
+/* New code for collapsible menu */
+.toggle-btn {
+    background-color: var(--pri);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* Add some space between content and toggle button */
+}
+
+.toggle-btn .nav-icon {
+    color: #262626;
+    font-size: 1.5rem;
+}
+
+.collapsed {
+    max-height: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.expanded {
+    max-height: 100vh;
+    /* Set a specific max height instead of auto for animation */
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-icon {
+    color: var(--icon-color);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icon:hover {
+    color: var(--hover-color);
+}
+
+.toggle-btn:hover .nav-icon {
+    color: black;
+}
+
+.nav-content {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* Remove transition from here as Framer will handle it */
+}
+
+.collapsed .nav-content {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 920px) {
+    .side-nav {
+        right: 1rem;
+        bottom: 1.5rem;
+        width: 3rem;
+    }
+
+    .toggle-btn {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .nav-icon {
+        font-size: 1.2rem;
+    }
+
+    .section-nav,
+    .social-nav {
+        gap: 1rem;
+    }
+
+    .section-nav {
+        padding-bottom: 1rem;
+    }
+}
