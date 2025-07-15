@@ -4,6 +4,7 @@ import "./About.css";
 import { motion } from "framer-motion";
 import useTheme from "../../contexts/theme";
 import ColoredBtn from "../../components/Buttons/ColoredBtn";
+import LazyImage from "../../components/LazyImage/LazyImage";
 
 function About() {
   const { themeMode } = useTheme();
@@ -35,7 +36,21 @@ function About() {
         transition={{ duration: 0.5 }}
         className="about-right"
       >
-        <img className="about-img" src={image} alt="" />
+        <LazyImage
+          src={image}
+          alt="About me"
+          className="about-img"
+          loading="lazy"
+          placeholder={
+            <div
+              style={{
+                width: "100%",
+                height: "300px",
+                backgroundColor: "#f0f0f0",
+              }}
+            ></div>
+          }
+        />
       </motion.div>
     </div>
   );

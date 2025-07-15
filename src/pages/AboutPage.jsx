@@ -1,6 +1,7 @@
 import me from "../assets/me.png";
 import useTheme from "../contexts/theme";
 import Timeline from "../sections/Timeline/Timeline";
+import LazyImage from "../components/LazyImage/LazyImage";
 
 function AboutPage() {
   const { themeMode } = useTheme();
@@ -9,7 +10,20 @@ function AboutPage() {
       <p className="about-header">So, who am I ? Bear with me.</p>
       <div className="intro">
         <div className="intro-left">
-          <img src={me} alt="sohaib aftab" />
+          <LazyImage
+            src={me}
+            alt="Sohaib Aftab - Computer Science Student"
+            loading="lazy"
+            placeholder={
+              <div
+                style={{
+                  width: "100%",
+                  height: "300px",
+                  backgroundColor: "#f0f0f0",
+                }}
+              ></div>
+            }
+          />
         </div>
         <div className="intro-right">
           <p className="title">I am Sohaib Aftab.</p>

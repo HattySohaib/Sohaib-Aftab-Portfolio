@@ -46,20 +46,48 @@ function Carousel() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <img className="desk-slide" src={slide2} alt="" />
-          <img className="mob-slide" src={s2mob} alt="" />
+          <picture>
+            <source media="(max-width: 920px)" srcSet={s2mob} />
+            <img
+              className="desk-slide"
+              src={slide2}
+              alt="Project showcase slide 1"
+              loading="lazy"
+            />
+          </picture>
         </SwiperSlide>
         <SwiperSlide>
-          <img className="desk-slide" src={slide1} alt="" />
-          <img className="mob-slide" src={s1mob} alt="" />
+          <picture>
+            <source media="(max-width: 920px)" srcSet={s1mob} />
+            <img
+              className="desk-slide"
+              src={slide1}
+              alt="Project showcase slide 2"
+              loading="lazy"
+            />
+          </picture>
         </SwiperSlide>
         <SwiperSlide>
-          <img className="desk-slide" src={slide3} alt="" />
-          <img className="mob-slide" src={s3mob} alt="" />
+          <picture>
+            <source media="(max-width: 920px)" srcSet={s3mob} />
+            <img
+              className="desk-slide"
+              src={slide3}
+              alt="Project showcase slide 3"
+              loading="lazy"
+            />
+          </picture>
         </SwiperSlide>
         <SwiperSlide>
-          <img className="desk-slide" src={slide4} alt="" />
-          <img className="mob-slide" src={s4mob} alt="" />
+          <picture>
+            <source media="(max-width: 920px)" srcSet={s4mob} />
+            <img
+              className="desk-slide"
+              src={slide4}
+              alt="Project showcase slide 4"
+              loading="lazy"
+            />
+          </picture>
         </SwiperSlide>
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>

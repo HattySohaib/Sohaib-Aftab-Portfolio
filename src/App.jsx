@@ -18,10 +18,15 @@ function App() {
   const [isHomePage, setIsHomePage] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false);
-      window.scrollTo(0, 0);
-    }, 2000);
+    // Optimize preloader duration and avoid forced reflow
+    const timer = setTimeout(() => {
+      requestAnimationFrame(() => {
+        setIsLoading(false);
+        window.scrollTo(0, 0);
+      });
+    }, 1500); // Reduced from 2000ms
+
+    return () => clearTimeout(timer);
   }, []);
 
   // Check if current route is homepage

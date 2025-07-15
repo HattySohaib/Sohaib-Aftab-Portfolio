@@ -35,7 +35,13 @@ function Hero() {
           </div>
         </div>
         <div className="hero-right">
-          <img src={dp} alt="" />
+          <img
+            src={dp}
+            alt="Sohaib Aftab - Developer & Programmer"
+            width="400"
+            height="400"
+            loading="eager"
+          />
         </div>
       </div>
     </div>

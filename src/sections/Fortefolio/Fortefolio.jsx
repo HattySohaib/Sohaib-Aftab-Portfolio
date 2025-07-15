@@ -4,6 +4,7 @@ import image from "../../assets/fortefolio.png";
 
 import { motion } from "framer-motion";
 import useTheme from "../../contexts/theme";
+import LazyImage from "../../components/LazyImage/LazyImage";
 
 function Fortefolio() {
   const { themeMode } = useTheme();
@@ -31,7 +32,21 @@ function Fortefolio() {
         transition={{ duration: 0.5 }}
         className="fortefolio-right"
       >
-        <img className="fortefolio-img" src={image} alt="" />
+        <LazyImage
+          src={image}
+          alt="Fortefolio illustration"
+          className="fortefolio-img"
+          loading="lazy"
+          placeholder={
+            <div
+              style={{
+                width: "100%",
+                height: "300px",
+                backgroundColor: "#f0f0f0",
+              }}
+            ></div>
+          }
+        />
       </motion.div>
     </div>
   );

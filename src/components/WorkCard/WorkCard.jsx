@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./WorkCard.css";
 import useTheme from "../../contexts/theme";
 import { RiArrowRightDownLine } from "@remixicon/react";
+import LazyImage from "../LazyImage/LazyImage";
 
 function WorkCard({ name, image, brief, source, link, hashtags, tag, tab }) {
   const { themeMode } = useTheme();
@@ -19,7 +20,25 @@ function WorkCard({ name, image, brief, source, link, hashtags, tag, tab }) {
       } card-${themeMode}`}
     >
       <div className="card-img">
-        <img src={img} alt="mockup" />
+        <LazyImage
+          src={img}
+          alt={`${name} project mockup`}
+          loading="lazy"
+          placeholder={
+            <div
+              style={{
+                width: "100%",
+                height: "100%",
+                backgroundColor: "#f0f0f0",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              Loading...
+            </div>
+          }
+        />
       </div>
       <div className="details">
         <p className="work-name">{name}</p>
