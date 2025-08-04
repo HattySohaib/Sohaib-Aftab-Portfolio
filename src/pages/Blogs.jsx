@@ -6,7 +6,13 @@ function Blogs() {
   const { themeMode } = useTheme();
   return (
     <div id="blogs-page" style={{ background: "white", width: "100%" }}>
-      <Bloggest apiKey={"abcde"} heading={"Recent Blogs"} theme={themeMode} />
+      <Bloggest
+        apiKey={
+          "4219f12c8283958cfbf34dbaa22d8cca827e00701eb94696998b2a410b6da12e"
+        }
+        heading={"Recent Blogs"}
+        theme={themeMode}
+      />
     </div>
   );
 }
