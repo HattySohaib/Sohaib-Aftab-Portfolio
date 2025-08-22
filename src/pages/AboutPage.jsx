@@ -2,6 +2,7 @@ import me from "../assets/me.png";
 import useTheme from "../contexts/theme";
 import Timeline from "../sections/Timeline/Timeline";
 import LazyImage from "../components/LazyImage/LazyImage";
+import Footer from "../components/Footer/Footer";
 
 function AboutPage() {
   const { themeMode } = useTheme();
@@ -66,6 +67,7 @@ function AboutPage() {
         </p>
       </div>
       <Timeline />
+      <Footer />
     </div>
   );
 }

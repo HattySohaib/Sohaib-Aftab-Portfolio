@@ -43,8 +43,8 @@ function WorkCard({ name, image, brief, source, link, hashtags, tag, tab }) {
       <div className="details">
         <p className="work-name">{name}</p>
         <div className="hashtags">
-          {hashtags.map((e) => (
-            <span>#{e} </span>
+          {hashtags.map((e, index) => (
+            <span key={index}>#{e} </span>
           ))}
         </div>
         <p className="work-brief">{brief}</p>

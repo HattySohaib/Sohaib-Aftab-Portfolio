@@ -92,6 +92,10 @@
     color: var(--span);
 }
 
+.carousel-irada {
+    padding: 0 1rem;
+}
+
 @media screen and (max-width: 920px) {
 
     .mob {

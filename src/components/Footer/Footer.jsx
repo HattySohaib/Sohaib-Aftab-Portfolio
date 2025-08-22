@@ -3,6 +3,7 @@ import "./Footer.css";
 
 import useTheme from "../../contexts/theme.js";
 import { RiArrowRightUpLine } from "@remixicon/react";
+import { IradaContactForm } from "irada-widgets";
 
 function Footer() {
   const { themeMode } = useTheme();
@@ -10,18 +11,14 @@ function Footer() {
     <>
       <div id="footer" className={`footer-${themeMode}`}>
         <div className="contact">
-          <p className="contact-subheader">
-            Wanna tell me how you feel about my site?
-          </p>
-          <p className="contact-subheader">Or have an idea to share?</p>
-          <p className="contact-header">Send me a message</p>
-
-          <div className="msg-box">
-            <input type="text" placeholder="Type your message" />
-            <button>
-              <p className="send-btn-text">Send</p>
-            </button>
-          </div>
+          <IradaContactForm
+            theme={themeMode}
+            apiKey={
+              "7ba93d45d89d6ccc6e0d0801412bae29f42121cfb4c884d9a4d1667619867ec6"
+            }
+            heading={"Wanna tell me how you feel about my site?"}
+            subheading={"Or have an idea to share?"}
+          />
         </div>
         <div className="social">
           <p className="social-header">Or, Connect with me via</p>

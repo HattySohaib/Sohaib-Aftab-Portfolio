@@ -8,6 +8,18 @@
     --txt: white;
 }
 
+/* Target only message form widgets */
+.irada-widget.ir-irada-message-form {
+    border: 1px solid #4b4b4b !important;
+    background-color: var(--f-bg) !important;
+}
+
+.irada-widget.ir-irada-message-form .ir-message-form-container input,
+textarea {
+    background-color: var(--f-bg) !important;
+    border: 1px solid #4b4b4b !important;
+}
+
 #footer {
     position: relative;
     z-index: 2;
@@ -16,18 +28,13 @@
     padding: 4rem;
 }
 
-.contact-subheader {
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: 300;
-}
 
-.contact-header,
 .social-header,
 .profiles-header {
     font-size: 2.5rem;
     font-weight: 300;
     color: var(--txt);
+    text-align: left;
 }
 
 .msg-box {
@@ -37,9 +44,6 @@
     overflow: hidden;
     display: flex;
 }
-
-
-
 
 .msg-box input {
     height: 3rem;
@@ -134,7 +138,6 @@
     }
 
     .social-header,
-    .contact-header,
     .profiles-header {
         font-size: 1.5rem;
     }
